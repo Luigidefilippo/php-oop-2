@@ -14,6 +14,12 @@ $crocchette = new Food('Royal Canini', 36, 'https://tse3.explicit.bing.net/th?id
 $ball = new Toy('Bouncy', 5, 'https://tse3.mm.bing.net/th?id=OIP.P1BMhoR1AJEr1sxaPTy5jQHaHa&pid=Api&P=0', $categories[0], 'toy', 'plastic');
 
 
+try{
+    $ball ->  setDiscount(50);
+} catch (Exception $e){
+    echo "Errore nello sconto" .$e->getMessage();
+}
+
 $products = [
 
     $product,
